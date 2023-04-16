@@ -1,0 +1,60 @@
+@media (max-width: 880px) {
+  #side-menu {
+    display: none;
+  }
+  .grid {
+    display: block;
+  }
+  .transparent {
+    display: none;
+  }
+  .display-name {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: rgb(202, 15, 15);
+  }
+
+  .menu-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .info-block {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .header {
+    .main-title {
+      margin: 0 auto;
+    }
+  }
+
+  .title-client {
+    padding-left: 1rem;
+  }
+
+  .file-content {
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+}

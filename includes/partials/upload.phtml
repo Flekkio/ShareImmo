@@ -1,0 +1,16 @@
+<form id="file-upload-form" class="uploader" method="post"
+    action="?page=agent&action=upload&id=<?php echo urlencode($id); ?>" enctype="multipart/form-data">
+    <h2>Envoyer un fichier à <?= $leClient->getPrenom() . ' ' . $leClient->getNom()?></h2>
+    <p class="lead">Service d'envoi <b>sécurisé</b></p>
+    <div id="start">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <p><?= $message ?? '' ?></p>
+        <label for="file">Sélectionnez un fichier PDF</label>
+        <input type="file" id="file" name="fileUpload" accept=".pdf" onchange="showFileName(); showButton();" />
+        <div id="file-name" class="file-name"></div>
+        <button type="submit" id="send-btn" name="submit" class="send-btn">Envoyer</button>
+    </div>
+</form>
+
+<script src="public/scripts/showfile.js"></script>

@@ -1,0 +1,35 @@
+<section class="user-list">
+
+    <div class="list-wrapper">
+
+
+        <div class="list-section">
+            <div class="search-bar">
+                <input type="text" name="searchtext" placeholder="Rechercher un client"> </input>
+                <i class="fa fa-search"> </i>
+            </div>
+            <ul class="list">
+                <?php
+					foreach ($lesClients as $unClient){
+							$selected = "";
+					if ($unClient->getId() == $id) {
+						$selected = "selected";
+					}
+						print('<li class="'.$selected.'">');
+						print('<div class="text">');
+						print('<a href="index.php?page=agent&action=view&id='.$unClient->getId().'">');
+						print('<h3>'.$unClient->getPrenom(). ' ' .$unClient->getNom().'</h3>');
+						print('<h5>'.$unClient->getVille().'</h5>');
+						print('</a>');
+						print('</div>');
+						print('</li>');
+					}
+				?>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="public/scripts/search.js"></script>

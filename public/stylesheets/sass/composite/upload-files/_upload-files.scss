@@ -1,0 +1,71 @@
+$theme: #ec1616;
+$dark-text: #1d1c1c;
+
+// Upload Demo
+//
+.uploader {
+  text-align: center;
+  display: block;
+
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 600px;
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    color: $theme;
+    margin-bottom: 0;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: $dark-text;
+  }
+
+  #start {
+    width: 100%;
+    &.hidden {
+      display: none;
+    }
+    i.fa {
+      font-size: 50px;
+      margin-bottom: 1rem;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .send-btn {
+    display: none;
+    margin-top: 20px;
+    background-color: #c00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    border: none;
+    width: auto;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  div {
+    margin: 0 0 0.5rem 0;
+    color: $dark-text;
+  }
+
+  label {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #c00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    width: auto;
+  }
+}

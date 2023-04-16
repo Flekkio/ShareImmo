@@ -1,0 +1,44 @@
+.incident_client {
+  display: flex;
+  align-items: center;
+  .plus {
+    font-size: 120px;
+    color: #666;
+    cursor: pointer;
+    margin: auto;
+  }
+  .form-container {
+    display: none;
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    &.show {
+      display: block;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 150px;
+    }
+    input[type="submit"] {
+      background-color: #ca2418;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}

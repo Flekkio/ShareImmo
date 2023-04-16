@@ -1,0 +1,1286 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* line 1, ../sass/composite/predefined/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/composite/predefined/_reset.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fafcfd;
+  overflow: hidden;
+}
+
+/* line 11, ../sass/composite/predefined/_reset.scss */
+.overflow-visible {
+  overflow: auto;
+}
+
+/* line 15, ../sass/composite/predefined/_reset.scss */
+.overflow-scroll {
+  overflow: scroll;
+}
+
+/* line 19, ../sass/composite/predefined/_reset.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 23, ../sass/composite/predefined/_reset.scss */
+.max-height {
+  max-height: 100vh;
+}
+
+/* line 1, ../sass/composite/predefined/_margin.scss */
+.margin {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+/* line 1, ../sass/composite/predefined/_layout.scss */
+.layout {
+  display: flex;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px -6px #363636;
+}
+
+/* line 1, ../sass/composite/predefined/_layout_client.scss */
+.layout_client {
+  display: flex;
+  width: 100%;
+}
+/* line 4, ../sass/composite/predefined/_layout_client.scss */
+.layout_client a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 1, ../sass/composite/predefined/_logo.scss */
+.logo {
+  width: 130px;
+}
+
+/* line 5, ../sass/composite/predefined/_logo.scss */
+.logo-menu {
+  width: 38vw;
+}
+
+/* line 1, ../sass/composite/predefined/_logo_black.scss */
+.logo_black {
+  width: 15vw;
+  margin-bottom: 1rem;
+}
+
+/* line 1, ../sass/composite/predefined/_container.scss */
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+/* line 4, ../sass/composite/predefined/_container.scss */
+.container.red {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+/* line 11, ../sass/composite/predefined/_container.scss */
+.container.red h1 {
+  justify-self: flex-start;
+  position: absolute;
+  top: 50px;
+}
+/* line 16, ../sass/composite/predefined/_container.scss */
+.container.red h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+/* line 20, ../sass/composite/predefined/_container.scss */
+.container.red p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #d10f0f;
+  font-weight: 800;
+}
+
+/* line 1, ../sass/composite/predefined/_grid.scss */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* line 1, ../sass/composite/predefined/_content.scss */
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  overflow: auto;
+}
+/* line 7, ../sass/composite/predefined/_content.scss */
+.content section {
+  width: 50%;
+}
+
+/* line 1, ../sass/composite/predefined/_content_client.scss */
+.content_client {
+  width: 100%;
+}
+
+/* line 1, ../sass/composite/predefined/_wrapper_client.scss */
+.wrapper_client {
+  max-width: 1200px;
+  margin: 30px 0;
+}
+
+/* line 1, ../sass/composite/predefined/_icon_client.scss */
+.icon_client {
+  font-size: 50px;
+}
+
+/* line 1, ../sass/composite/predefined/_title.scss */
+.name {
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/composite/predefined/_typo.scss */
+.typo {
+  color: #4d4b4d;
+  font-weight: 600;
+}
+/* line 4, ../sass/composite/predefined/_typo.scss */
+.typo--typo-light {
+  color: #798796;
+}
+
+/* line 1, ../sass/composite/predefined/_info-block.scss */
+.info-block {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+/* line 4, ../sass/composite/predefined/_info-block.scss */
+.info-block h2 {
+  color: #d81515;
+}
+/* line 7, ../sass/composite/predefined/_info-block.scss */
+.info-block p {
+  padding: 1rem 0;
+  color: #6c6d6e;
+}
+/* line 11, ../sass/composite/predefined/_info-block.scss */
+.info-block .label {
+  margin-right: 10px;
+}
+
+/* line 1, ../sass/composite/predefined/_file-content.scss */
+.file-content {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  width: 60%;
+}
+/* line 10, ../sass/composite/predefined/_file-content.scss */
+.file-content .label {
+  color: #fff;
+  font-size: 0.8rem;
+}
+/* line 14, ../sass/composite/predefined/_file-content.scss */
+.file-content .icon {
+  display: block;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* line 1, ../sass/composite/predefined/_row-wrapper.scss */
+.row-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 13, ../sass/composite/predefined/_row-wrapper.scss */
+.row-wrapper--noflex {
+  display: block;
+  background: none;
+  box-shadow: none;
+}
+/* line 18, ../sass/composite/predefined/_row-wrapper.scss */
+.row-wrapper_auto {
+  margin: 2rem auto;
+}
+/* line 21, ../sass/composite/predefined/_row-wrapper.scss */
+.row-wrapper .btn {
+  border: none;
+  background: #fff;
+  border-radius: 0;
+  padding: 0.875rem 0.625rem;
+  cursor: pointer;
+}
+/* line 27, ../sass/composite/predefined/_row-wrapper.scss */
+.row-wrapper .btn--red {
+  background: #d3210a;
+  color: #fff;
+}
+/* line 31, ../sass/composite/predefined/_row-wrapper.scss */
+.row-wrapper .btn__label {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  /* line 36, ../sass/composite/predefined/_row-wrapper.scss */
+  .row-wrapper .info-block {
+    flex-basis: 48%;
+  }
+}
+
+/* line 1, ../sass/composite/predefined/_table.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+/* line 5, ../sass/composite/predefined/_table.scss */
+table th,
+table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 10, ../sass/composite/predefined/_table.scss */
+table th.progress,
+table td.progress {
+  color: #c90f0f;
+  font-weight: 600;
+}
+/* line 14, ../sass/composite/predefined/_table.scss */
+table th.down,
+table td.down {
+  color: #086408;
+  font-weight: 600;
+}
+/* line 19, ../sass/composite/predefined/_table.scss */
+table th {
+  background-color: #fd1100;
+  color: #ffffff;
+}
+/* line 23, ../sass/composite/predefined/_table.scss */
+table tr:hover {
+  background-color: #f5f5f5;
+}
+/* line 26, ../sass/composite/predefined/_table.scss */
+table .open {
+  background-color: #ffcdd2;
+}
+/* line 29, ../sass/composite/predefined/_table.scss */
+table .close-link {
+  text-decoration: none;
+  color: #ca0e0e;
+}
+/* line 33, ../sass/composite/predefined/_table.scss */
+table .close-link:hover {
+  text-decoration: underline;
+}
+
+/* line 38, ../sass/composite/predefined/_table.scss */
+.large {
+  max-width: none;
+}
+
+/* line 1, ../sass/composite/predefined/_col-3.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 1, ../sass/composite/predefined/_meteo.scss */
+.meteo {
+  border-radius: 10px;
+}
+
+/* line 1, ../sass/composite/predefined/_miscs.scss */
+.clock {
+  color: #d14545;
+}
+
+/* line 6, ../sass/composite/predefined/_miscs.scss */
+.delete-element a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ec0e0e;
+  margin: 6px;
+}
+
+/* line 15, ../sass/composite/predefined/_miscs.scss */
+.edit-element a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #0feb3e;
+  margin: 6px;
+}
+
+/* line 24, ../sass/composite/predefined/_miscs.scss */
+.upload-element a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #0c9c7d;
+  margin: 6px;
+}
+
+/* line 32, ../sass/composite/predefined/_miscs.scss */
+.fa-right-from-bracket {
+  color: #ff1616;
+  font-size: 20px;
+}
+
+/* line 37, ../sass/composite/predefined/_miscs.scss */
+.sans-serif {
+  font-family: sans-serif;
+}
+
+/* line 1, ../sass/composite/predefined/_burger.scss */
+.burger {
+  display: none;
+  z-index: 999999999;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/composite/predefined/_menu.scss */
+.menu-client {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000fa;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+/* line 11, ../sass/composite/predefined/_menu.scss */
+.menu-client.visible {
+  left: 0;
+}
+
+@media (max-width: 880px) {
+  /* line 2, ../sass/composite/predefined/_responsive.scss */
+  #side-menu {
+    display: none;
+  }
+
+  /* line 5, ../sass/composite/predefined/_responsive.scss */
+  .grid {
+    display: block;
+  }
+
+  /* line 8, ../sass/composite/predefined/_responsive.scss */
+  .transparent {
+    display: none;
+  }
+
+  /* line 11, ../sass/composite/predefined/_responsive.scss */
+  .display-name {
+    display: none;
+  }
+
+  /* line 15, ../sass/composite/predefined/_responsive.scss */
+  .burger {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #ca0f0f;
+  }
+
+  /* line 22, ../sass/composite/predefined/_responsive.scss */
+  .menu-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  /* line 30, ../sass/composite/predefined/_responsive.scss */
+  .menu-client li {
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 2rem;
+  }
+  /* line 34, ../sass/composite/predefined/_responsive.scss */
+  .menu-client li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* line 41, ../sass/composite/predefined/_responsive.scss */
+  .info-block {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  /* line 47, ../sass/composite/predefined/_responsive.scss */
+  .header .main-title {
+    margin: 0 auto;
+  }
+
+  /* line 52, ../sass/composite/predefined/_responsive.scss */
+  .title-client {
+    padding-left: 1rem;
+  }
+
+  /* line 56, ../sass/composite/predefined/_responsive.scss */
+  .file-content {
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+}
+/* line 1, ../sass/composite/header/_header.scss */
+.topbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 0.5px solid #ddddde;
+}
+/* line 8, ../sass/composite/header/_header.scss */
+.topbar h2.title {
+  font-weight: 600;
+}
+/* line 12, ../sass/composite/header/_header.scss */
+.topbar .user-options {
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+}
+/* line 17, ../sass/composite/header/_header.scss */
+.topbar .user-options .country-selector {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  padding: 12px 7.5px;
+  border: 0.5px solid #ddddde;
+  border-radius: 2.5px;
+  font-size: 0.75em;
+  position: relative;
+}
+/* line 27, ../sass/composite/header/_header.scss */
+.topbar .user-options .country-selector::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid #ddddde;
+  height: 100%;
+  left: -30px;
+}
+/* line 36, ../sass/composite/header/_header.scss */
+.topbar .user-options .country-selector i {
+  margin: 0 10px;
+}
+/* line 38, ../sass/composite/header/_header.scss */
+.topbar .user-options .country-selector i:first-child {
+  font-size: 1.5em;
+}
+/* line 41, ../sass/composite/header/_header.scss */
+.topbar .user-options .country-selector i:last-child {
+  color: #74777b;
+  margin-left: 30px;
+}
+/* line 47, ../sass/composite/header/_header.scss */
+.topbar .user-options .country-selector:hover {
+  cursor: pointer;
+  background: #4ac85c;
+  color: #fff;
+}
+/* line 55, ../sass/composite/header/_header.scss */
+.topbar button {
+  color: #fff;
+  outline: none;
+  border: none;
+  background: #ef2525;
+  padding: 15px 15px;
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2.5px;
+  margin-right: 30px;
+}
+/* line 65, ../sass/composite/header/_header.scss */
+.topbar button:hover {
+  cursor: pointer;
+  background: #f13a3a;
+}
+
+/* line 1, ../sass/composite/header_client/_header.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 5, ../sass/composite/header_client/_header.scss */
+.header.arrow {
+  justify-content: space-between;
+}
+/* line 8, ../sass/composite/header_client/_header.scss */
+.header h1,
+.header h3 {
+  margin: 10px;
+}
+/* line 12, ../sass/composite/header_client/_header.scss */
+.header h3 {
+  font-size: 16px;
+  color: #e04242;
+}
+/* line 16, ../sass/composite/header_client/_header.scss */
+.header .little-icon {
+  padding-right: 10px;
+}
+
+/* line 1, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar {
+  background: #252529;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  min-height: 100vh;
+}
+/* line 9, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .brand {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 0.5px solid #424447;
+}
+/* line 17, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .brand .icon {
+  margin-right: 10px;
+}
+/* line 22, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .desc {
+  margin-left: 15px;
+}
+/* line 24, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .desc h6 {
+  margin-top: 10px;
+  color: #74777b;
+}
+/* line 30, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav {
+  color: #fff;
+  box-sizing: border-box;
+}
+/* line 34, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .main-menu {
+  padding-bottom: 15px;
+  padding: 5px 38px;
+  border-bottom: 0.5px solid #424447;
+}
+/* line 38, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .main-menu::before {
+  content: "MENU";
+}
+/* line 42, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .sub-menu {
+  border-bottom: none;
+}
+/* line 44, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .sub-menu::before {
+  content: "SUPPORT";
+}
+/* line 49, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .menu::before {
+  color: #74777b;
+  display: block;
+  padding: 0 15px 15px 15px;
+  font-size: 0.75em;
+}
+/* line 56, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .menu li.menu-item {
+  font-size: 0.82rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 15px;
+  border-radius: 2.5px;
+  user-select: none;
+}
+/* line 66, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .menu li.menu-item .badge {
+  display: block;
+  color: #252529;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+}
+/* line 78, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .menu li.menu-item a {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+/* line 84, ../sass/composite/sidebar/_sidebar.scss */
+.sidebar .main-nav .menu li.menu-item.selected, .sidebar .main-nav .menu li.menu-item:hover {
+  background: #db0f0f;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/composite/liste/_liste.scss */
+.user-list {
+  border-right: 0.5px solid #ddddde;
+}
+/* line 3, ../sass/composite/liste/_liste.scss */
+.user-list .search-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 0.5px solid #ddddde;
+  color: #8e9094;
+  font-size: 1em;
+  background: #fcfcfc;
+}
+/* line 11, ../sass/composite/liste/_liste.scss */
+.user-list .search-bar .fa-search {
+  color: #ef2525;
+  cursor: pointer;
+}
+/* line 16, ../sass/composite/liste/_liste.scss */
+.user-list .search-bar input[type="text"] {
+  border: none;
+  outline: none;
+  font-size: 0.75em;
+  background: none;
+  padding-left: 40px;
+}
+/* line 25, ../sass/composite/liste/_liste.scss */
+.user-list .list-section {
+  max-height: auto;
+  overflow-y: scroll;
+}
+/* line 28, ../sass/composite/liste/_liste.scss */
+.user-list .list-section > label {
+  color: #8e9094;
+  display: block;
+  padding: 15px 30px;
+  border-bottom: 0.5px solid #ddddde;
+  font-size: 0.75em;
+}
+/* line 36, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list {
+  list-style: none;
+}
+/* line 38, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li {
+  border-bottom: 0.5px solid #ddddde;
+  border-right: 5px solid transparent;
+  display: flex;
+  align-items: center;
+}
+/* line 43, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 48, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li:hover {
+  cursor: pointer;
+}
+/* line 52, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li:hover, .user-list .list-section .list li.selected {
+  border-right-color: #db0f0f;
+  background: #f7f7f7;
+}
+/* line 58, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li > img {
+  border-radius: 50%;
+}
+/* line 61, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li .text {
+  margin-left: 30px;
+  width: 100%;
+}
+/* line 64, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li .text h3 {
+  font-weight: 600;
+}
+/* line 68, ../sass/composite/liste/_liste.scss */
+.user-list .list-section .list li .text h5 {
+  color: #74777b;
+  margin-top: 10px;
+  font-size: 0.75em;
+}
+
+/* line 1, ../sass/composite/user-details/_user-details.scss */
+.user-detail {
+  padding: 30px;
+  box-sizing: border-box;
+}
+/* line 5, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-item {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  position: relative;
+}
+/* line 11, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-item:last-child {
+  margin-bottom: 0;
+}
+/* line 15, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-item a.more {
+  position: absolute;
+  text-decoration: none;
+  color: red;
+  top: 0;
+  right: 0;
+  font-size: 0.625em;
+  color: #8e9094;
+}
+/* line 25, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-item > h4 {
+  color: #74777b;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  margin-bottom: 15px;
+}
+/* line 33, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-info {
+  display: flex;
+  align-items: center;
+}
+/* line 37, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-info > img {
+  border-radius: 50%;
+}
+/* line 41, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-info .desc {
+  margin-left: 15px;
+}
+/* line 44, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-info .desc h5 {
+  color: #74777b;
+  font-size: 0.75em;
+  margin-top: 10px;
+}
+/* line 50, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-info .desc .reviews {
+  margin-top: 30px;
+  font-size: 0.75em;
+  color: #74777b;
+}
+/* line 54, ../sass/composite/user-details/_user-details.scss */
+.user-detail .profile-info .desc .reviews .count {
+  padding: 7.5px 10px;
+  color: #fff;
+  border-radius: 2.5px;
+  background: #db2626;
+  margin-right: 7.5px;
+}
+/* line 66, ../sass/composite/user-details/_user-details.scss */
+.user-detail .basic-details ul.info {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+/* line 71, ../sass/composite/user-details/_user-details.scss */
+.user-detail .basic-details ul.info li {
+  color: #424447;
+  font-size: 0.75em;
+  display: flex;
+  margin-right: 30px;
+}
+/* line 77, ../sass/composite/user-details/_user-details.scss */
+.user-detail .basic-details ul.info li i {
+  color: #74777b;
+  margin-right: 10px;
+}
+/* line 86, ../sass/composite/user-details/_user-details.scss */
+.user-detail .bio-details .desc {
+  color: #5b5d61;
+  font-size: 0.75em;
+  line-height: 1.8em;
+}
+/* line 93, ../sass/composite/user-details/_user-details.scss */
+.user-detail .tags-details .info {
+  font-size: 0.75em;
+  list-style: none;
+}
+/* line 97, ../sass/composite/user-details/_user-details.scss */
+.user-detail .tags-details .info li {
+  display: inline-block;
+  background: #252529;
+  padding: 7.5px 10px;
+  border-radius: 1.66667px;
+  color: #fff;
+  margin-right: 7.5px;
+}
+/* line 105, ../sass/composite/user-details/_user-details.scss */
+.user-detail .tags-details .info li.high {
+  background: #34ab45;
+}
+/* line 109, ../sass/composite/user-details/_user-details.scss */
+.user-detail .tags-details .info li.medium {
+  background: #f6ab2e;
+}
+/* line 113, ../sass/composite/user-details/_user-details.scss */
+.user-detail .tags-details .info li.low {
+  background: #1765d8;
+}
+/* line 119, ../sass/composite/user-details/_user-details.scss */
+.user-detail .divider {
+  border-bottom: 0.5px solid #ddddde;
+  height: 1px;
+}
+
+/* line 127, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings {
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+}
+/* line 132, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings li {
+  display: inline-block;
+  font-size: 0.75em;
+  max-width: 65px;
+  margin: 0 15px;
+  margin-bottom: auto;
+}
+/* line 139, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings li:first-child {
+  margin-left: 0;
+}
+/* line 143, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings li img {
+  border-radius: 5px;
+}
+/* line 147, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings li h3 {
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+/* line 152, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings li h4 {
+  margin-top: 10px;
+  color: #8e9094;
+  line-height: 1.4em;
+}
+/* line 158, ../sass/composite/user-details/_user-details.scss */
+.user-detail .associated .buildings li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/composite/form/_form.scss */
+#form-agent {
+  width: 100%;
+  margin-left: 100px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+/* line 7, ../sass/composite/form/_form.scss */
+#form-agent input[type="text"],
+#form-agent input[type="password"],
+#form-agent input[type="date"],
+#form-agent input[type="datetime"],
+#form-agent input[type="email"],
+#form-agent input[type="number"],
+#form-agent input[type="search"],
+#form-agent input[type="tel"],
+#form-agent input[type="time"],
+#form-agent input[type="url"],
+#form-agent textarea,
+#form-agent select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+/* line 33, ../sass/composite/form/_form.scss */
+#form-agent input[type="radio"],
+#form-agent input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+/* line 38, ../sass/composite/form/_form.scss */
+#form-agent select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+  color: #333;
+}
+/* line 45, ../sass/composite/form/_form.scss */
+#form-agent button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #ff1616;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ef2525;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+/* line 60, ../sass/composite/form/_form.scss */
+#form-agent fieldset {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: none;
+}
+/* line 66, ../sass/composite/form/_form.scss */
+#form-agent legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+/* line 71, ../sass/composite/form/_form.scss */
+#form-agent label {
+  display: block;
+  margin-bottom: 8px;
+}
+/* line 76, ../sass/composite/form/_form.scss */
+#form-agent label.light {
+  font-weight: 300;
+  display: inline;
+}
+/* line 81, ../sass/composite/form/_form.scss */
+#form-agent .number {
+  background-color: #ef2525;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+@media screen and (min-width: 480px) {
+  /* line 1, ../sass/composite/form/_form.scss */
+  #form-agent {
+    max-width: 480px;
+  }
+}
+
+/* line 1, ../sass/composite/calendrier/_calendrier.scss */
+#calendar {
+  font-size: 0.65rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 8, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_weekdays div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 12, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_content,
+#calendar_weekdays,
+#calendar_header {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  float: left;
+  z-index: 10;
+}
+
+/* line 21, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_weekdays div,
+#calendar_content div {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #ffffff;
+  color: #787878;
+}
+
+/* line 30, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_content {
+  -webkit-border-radius: 0px 0px 12px 12px;
+  -moz-border-radius: 0px 0px 12px 12px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+/* line 35, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_content div {
+  float: left;
+}
+
+/* line 38, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_content div:hover {
+  background-color: #f8f8f8;
+}
+
+/* line 41, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_content div.blank {
+  background-color: #e8e8e8;
+}
+
+/* line 44, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_header,
+#calendar_content div.today {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+/* line 50, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_content div.today {
+  color: #ffffff;
+}
+
+/* line 53, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_header {
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  background-color: #60ff82;
+  padding: 18px 0;
+  -webkit-border-radius: 12px 12px 0px 0px;
+  -moz-border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+/* line 63, ../sass/composite/calendrier/_calendrier.scss */
+#calendar_header h1 {
+  font-size: 1.5em;
+  color: #ffffff;
+  float: left;
+  width: 70%;
+}
+
+/* line 69, ../sass/composite/calendrier/_calendrier.scss */
+i[class^="icon-chevron"] {
+  color: #ffffff;
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+}
+
+/* line 6, ../sass/composite/upload-files/_upload-files.scss */
+.uploader {
+  text-align: center;
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 600px;
+}
+/* line 13, ../sass/composite/upload-files/_upload-files.scss */
+.uploader h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  color: #ec1616;
+  margin-bottom: 0;
+}
+/* line 20, ../sass/composite/upload-files/_upload-files.scss */
+.uploader p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #1d1c1c;
+}
+/* line 26, ../sass/composite/upload-files/_upload-files.scss */
+.uploader #start {
+  width: 100%;
+}
+/* line 28, ../sass/composite/upload-files/_upload-files.scss */
+.uploader #start.hidden {
+  display: none;
+}
+/* line 31, ../sass/composite/upload-files/_upload-files.scss */
+.uploader #start i.fa {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+/* line 38, ../sass/composite/upload-files/_upload-files.scss */
+.uploader .send-btn {
+  display: none;
+  margin-top: 20px;
+  background-color: #c00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  border: none;
+  width: auto;
+}
+/* line 51, ../sass/composite/upload-files/_upload-files.scss */
+.uploader input[type="file"] {
+  display: none;
+}
+/* line 55, ../sass/composite/upload-files/_upload-files.scss */
+.uploader div {
+  margin: 0 0 0.5rem 0;
+  color: #1d1c1c;
+}
+/* line 60, ../sass/composite/upload-files/_upload-files.scss */
+.uploader label {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #c00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  width: auto;
+}
+
+/* line 1, ../sass/composite/interface_client/_interface.scss */
+.card {
+  background: #ef0505;
+  padding: 5px;
+  margin: 8px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #a2a2a2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+/* line 9, ../sass/composite/interface_client/_interface.scss */
+.card.transparent-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/* line 14, ../sass/composite/interface_client/_interface.scss */
+.card.transparent {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/* line 19, ../sass/composite/interface_client/_interface.scss */
+.card .card-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30px;
+  color: #fff;
+}
+/* line 27, ../sass/composite/interface_client/_interface.scss */
+.card .card-content .card-icon {
+  font-size: 50px;
+}
+/* line 30, ../sass/composite/interface_client/_interface.scss */
+.card .card-content .label {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* line 1, ../sass/composite/sidebar_client/_sidebar_client.scss */
+#side-menu {
+  min-height: 100vh;
+}
+/* line 3, ../sass/composite/sidebar_client/_sidebar_client.scss */
+#side-menu .wrapper-menu {
+  margin-top: 150px;
+}
+/* line 6, ../sass/composite/sidebar_client/_sidebar_client.scss */
+#side-menu .wrapper-menu .side-icons ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 10, ../sass/composite/sidebar_client/_sidebar_client.scss */
+#side-menu .wrapper-menu .side-icons li {
+  list-style: none;
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: #1e1e1e;
+}
+/* line 17, ../sass/composite/sidebar_client/_sidebar_client.scss */
+#side-menu .wrapper-menu .side-icons li .logout {
+  color: red;
+}
+
+/* line 1, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client {
+  display: flex;
+  align-items: center;
+}
+/* line 4, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client .plus {
+  font-size: 120px;
+  color: #666;
+  cursor: pointer;
+  margin: auto;
+}
+/* line 10, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client .form-container {
+  display: none;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+/* line 19, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client .form-container.show {
+  display: block;
+}
+/* line 22, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client .form-container input[type="text"],
+.incident_client .form-container select,
+.incident_client .form-container textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* line 32, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client .form-container textarea {
+  height: 150px;
+}
+/* line 35, ../sass/composite/incident_client/_incident_client.scss */
+.incident_client .form-container input[type="submit"] {
+  background-color: #ca2418;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

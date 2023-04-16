@@ -1,0 +1,49 @@
+<?php
+	ini_set('display_errors', 'on');
+	require_once "includes/core/globals.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Immo - Gestion Immobilière</title>
+    <link rel="stylesheet" href="public/stylesheets/login.css" />
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#" method="post">
+                <h1>Votre espace personnel</h1>
+
+                <input type="text" name="champLogin" id="chLogin" value="" placeholder="Nom d'utilisateur" />
+                <input type="password" name="champMdp" id="chMdp" value="" placeholder="Mot de passe" />
+
+                <button>Se connecter</button>
+                <p><?= $message ?? '' ?></p>
+            </form>
+
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+
+                <div class="overlay-panel overlay-right">
+                    <img src="public/medias/imgs/logo.png" />
+                    <p>
+                        Espace de gestion et de communication qui simplifie les échanges
+                        et garantit une collaboration optimale entre nos professionnels et
+                        vous.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

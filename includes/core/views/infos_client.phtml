@@ -1,0 +1,38 @@
+<?php
+	ini_set('display_errors', 'on');
+	require_once "includes/core/globals.php";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <?php require "includes/partials/page_head.phtml"; ?>
+</head>
+
+<body class="margin sans-serif">
+    <?php require_once "includes/partials/menu-responsive.phtml"; ?>
+    <div class="layout_client">
+        <?php require_once "includes/partials/side_menu.phtml"; ?>
+
+        <section class="content_client">
+            <div class="wrapper_client">
+                <div class="header">
+                    <h1 class="title-client"><a href="index.php?page=client&action=main"><i
+                                class="fa-solid fa-arrow-left little-icon"></i></a>Gérer mes informations</h1>
+                    <h3 class="display-name"><i
+                            class="fa-solid fa-user little-icon"></i><?= $client->getPrenom() . ' ' . $client->getNom() ?>
+                    </h3>
+                    <span class="burger"><i class="fa-solid fa-bars"></i></span>
+                </div>
+                <?php require_once "includes/partials/profil.phtml"; ?>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="public/scripts/showmenu.js"></script>
+
+</body>
+
+</html>

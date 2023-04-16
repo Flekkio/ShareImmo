@@ -1,0 +1,92 @@
+.sidebar {
+  background: $colorDark;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: $layoutBorderRadius;
+  border-bottom-left-radius: $layoutBorderRadius;
+  min-height: 100vh;
+
+  .brand {
+    color: $colorWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 0.5px solid darken($colorLightGrey, 40%);
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+
+  .desc {
+    margin-left: $standardPadding/2;
+    h6 {
+      margin-top: $standardPadding/3;
+      color: darken($colorLightGrey, 20%);
+    }
+  }
+
+  .main-nav {
+    color: $colorWhite;
+    box-sizing: border-box;
+
+    .main-menu {
+      padding-bottom: 15px;
+      padding: 5px 38px;
+      border-bottom: 0.5px solid darken($colorLightGrey, 40%);
+      &::before {
+        content: "MENU";
+      }
+    }
+    .sub-menu {
+      border-bottom: none;
+      &::before {
+        content: "SUPPORT";
+      }
+    }
+    .menu {
+      &::before {
+        color: darken($colorLightGrey, 20%);
+        display: block;
+        padding: 0 $standardPadding/2 $standardPadding/2 $standardPadding/2;
+        font-size: $sizeMedium;
+      }
+
+      li.menu-item {
+        font-size: 0.82rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $colorWhite;
+        padding: $standardPadding/2;
+        border-radius: $layoutBorderRadius/2;
+        user-select: none;
+
+        .badge {
+          display: block;
+          color: $colorDark;
+          background: $colorWhite;
+          border-radius: 50%;
+          text-align: center;
+          padding-top: 4px;
+          box-sizing: border-box;
+          width: 20px;
+          height: 20px;
+        }
+
+        a {
+          width: 100%;
+          text-decoration: none;
+          color: $colorWhite;
+        }
+
+        &.selected,
+        &:hover {
+          background: #db0f0f;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

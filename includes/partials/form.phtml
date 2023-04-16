@@ -1,0 +1,58 @@
+<form id="form-agent" action="index.php?page=agent&action=add" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+
+        <legend><span class="number">1</span> Informations personnelles</legend>
+
+        <label for="name">Civilité:</label>
+        <select name="cbCivilite" id="chCbCivilite">
+            <?php
+        foreach ($lesCivilites as $civilite){
+          if ($civilite->getId() == $unClient->getCivilite()->getId()){
+            print('<option value="'.$civilite->getId().'">'.$civilite->getLibelleLong().'</option>');
+          }else{
+            print('<option value="'.$civilite->getId().'">'.$civilite->getLibelleLong().'</option>');
+          }
+        }
+      ?>
+        </select>
+
+        <label for="champNom">Nom:</label>
+        <input type="text" id="champNom" name="chNom">
+
+        <label for="champPrenom">Prénom:</label>
+        <input type="text" id="champPrenom" name="chPrenom">
+
+        <label for="champTelephone">Téléphone:</label>
+        <input type="text" id="champTelephone" name="chTelephone">
+
+        <label for="champMail">Email:</label>
+        <input type="email" id="champMail" name="chMail">
+
+    </fieldset>
+    <fieldset>
+
+        <legend><span class="number">2</span> Adresse</legend>
+
+        <label for="champTel">Numéro de rue:</label>
+        <input type="text" id="champNumRue" name="chNumRue">
+
+        <label for="champRue">Nom de rue:</label>
+        <input type="text" id="champNomRue" name="chNomRue">
+
+        <label for="champVille">Ville:</label>
+        <input type="text" id="champVille" name="chVille">
+
+    </fieldset>
+    <fieldset>
+
+        <legend><span class="number">3</span> Informations complémentaires</legend>
+
+        <label for="champCommentaire">Commentaire:</label>
+        <textarea id="champCommentaire" name="chCommentaire"></textarea>
+
+    </fieldset>
+
+    <button type="submit">Confirmer inscription</button>
+
+</form>

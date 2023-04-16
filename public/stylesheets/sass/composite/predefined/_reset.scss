@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: $colorLight;
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.max-height {
+  max-height: 100vh;
+}

@@ -1,0 +1,36 @@
+ <div class="row-wrapper">
+     <div class="info-block">
+         <h2>Informations personnelles</h2>
+         <p><span class="label typo">Nom </span> <?= $client->getNom() ?></p>
+         <p><span class="label typo">Prénom </span> <?= $client->getPrenom() ?></p>
+         <p><span class="label typo">N° Tél</span> <?= $client->getTelephone() ?></p>
+         <p><span class="label typo">Email </span> <?= $client->getMail() ?></p>
+         <p><span class="label typo">Adresse </span> </i><?= $client->getNumRue() . ' ' . $client->getNomRue() ?></p>
+         <p><span class="label typo">Ville </span> </i><?= $client->getVille() ?></p>
+     </div>
+     <div class="info-block right">
+         <h2>Informations de connexion</h2>
+         <p><span class="label typo">Identifiant </span> <?= $client->getUsername() ?></p>
+         <p><span class="label typo">Mot de passe </span> ******</p>
+         <div id="password-container">
+             <button id="btn-password" class="btn btn--red">
+                 <span class="btn__label">Modifier mot de passe</span>
+             </button>
+             <form id="form-password" action="index.php?page=client&action=profil" method="post"
+                 enctype="multipart/form-data" style="display:none">
+                 <label for="old-password" class="label typo">Ancien mot de passe:</label>
+                 <input type="password" id="old-password" name="old-password"><br><br>
+                 <label for="new-password" class="label typo">Nouveau mot de passe:</label>
+                 <input type="password" id="new-password" name="new-password"><br><br>
+                 <button type="submit" class="btn btn--red">
+                     <span class="btn__label">Valider</span>
+                 </button>
+                 <button type="button" id="cancel-password" class="btn btn--red" style="margin-left: 10px;">
+                     <span class="btn__label">Annuler</span>
+                 </button>
+             </form>
+         </div>
+     </div>
+ </div>
+
+ <script src="public/scripts/changepassword.js"></script>

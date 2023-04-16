@@ -1,0 +1,23 @@
+#side-menu {
+  min-height: 100vh;
+  .wrapper-menu {
+    margin-top: 150px;
+    .side-icons {
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        padding: 20px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        color: rgb(30, 30, 30);
+        .logout {
+          color: red;
+        }
+      }
+    }
+  }
+}

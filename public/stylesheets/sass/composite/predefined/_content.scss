@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  overflow: auto;
+
+  section {
+    width: 50%;
+  }
+}

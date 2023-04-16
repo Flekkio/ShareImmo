@@ -1,0 +1,14 @@
+.menu-client {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000fa;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+  &.visible {
+    left: 0;
+  }
+}

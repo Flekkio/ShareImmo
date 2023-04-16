@@ -1,0 +1,28 @@
+<div class="topbar">
+    <h2 class="title"> <?php echo $_SESSION['agent']->getPrenom() . ' ' . $_SESSION['agent']->getNom() ?>
+        <a href="index.php?page=users&action=logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </h2>
+
+    <a target="_blank" href="https://hotelmix.fr/weather/bordeaux-18063"><img class="meteo"
+            src="https://w.bookcdn.com/weather/picture/23_18063_1_3_e74c3c_250_c0392b_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=33402&domid=581&anc_id=80862"
+            alt="booked.net" /></a>
+
+    <a href="https://time.is/Paris" id="time_is_link" rel="nofollow" style="font-size:36px"></a>
+    <span class="clock" id="Paris_z71f" style="font-size:36px"></span>
+    <script src="//widget.time.is/fr.js"></script>
+    <script>
+    time_is_widget.init({
+        Paris_z71f: {
+            template: "TIME<br>DATE",
+            date_format: ""
+        }
+    });
+    </script>
+
+
+    <div class="user-options">
+        <button name="adduser" onclick="window.location.href='index.php?page=agent&action=add'"> Ajouter client
+        </button>
+
+    </div>
+</div>

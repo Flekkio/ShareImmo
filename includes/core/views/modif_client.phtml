@@ -1,0 +1,28 @@
+<?php
+	ini_set('display_errors', 'on');
+	require_once "includes/core/globals.php";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <?php require "includes/partials/page_head.phtml"; ?>
+</head>
+
+<body class="overflow-visible">
+    <div class="layout">
+        <?php require_once "includes/partials/navbar.phtml"; ?>
+
+        <section class="content">
+            <?php require_once "includes/partials/header.phtml"; ?>
+
+            <div class="container">
+                <?php require_once "includes/partials/form-edit.phtml"; ?>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<div class="row-wrapper row-wrapper--noflex">
+    <?php foreach ($lesDocuments as $document) { ?>
+
+    <a class="file-content" href="#"
+        onclick="telecharger('<?php echo $document->getNom(); ?>', '<?php echo base64_encode($document->getFichier()); ?>')"><i
+            class="fa-solid fa-cloud-arrow-down icon"></i><span class="label"><?php echo $document->getNom(); ?></span>
+    </a>
+
+    <?php } ?>
+</div>
+
+<script src="public\scripts\download.js"></script>

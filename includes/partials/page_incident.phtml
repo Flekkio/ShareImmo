@@ -1,0 +1,91 @@
+<div class="row-wrapper row-wrapper--noflex row-wrapper_auto">
+    <form action="index.php?page=client&action=incident" method="post" enctype="multipart/form-data">
+        <?php if ($nombreIncident > 0): ?>
+        <h2>Vous avez <?= $nombreIncident ?> incidents en cours</h2>
+        <?php else: ?>
+        <h2>Pas d'incidents en cours</h2>
+        <?php endif; ?>
+        <p>Cliquez sur le bouton "+" pour ajouter un nouvel incident</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Statut</th>
+                    <th>Objet</th>
+                    <th>Type</th>
+                    <th>Référence</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $openIncidents = array();
+                $otherIncidents = array();
+
+                foreach ($voirIncidents as $incident) {
+                    if (showStatut($incident->getId()) == 'open') {
+                        array_push($openIncidents, $incident);
+                    } else {
+                        array_push($otherIncidents, $incident);
+                    }
+                }
+
+                foreach ($openIncidents as $incident) { ?>
+                <tr class="open">
+                    <td class="progress">En cours</td>
+                    <td><?php echo $incident->getTitre() ?></td>
+                    <td><?php echo $incident->getTypeIncident()->getLibelle() ?></td>
+                    <td><?php echo $incident->getRef() ?></td>
+                    <td><a class="close-link"
+                            href="index.php?page=client&action=close&id=<?= $incident->getId() ?>">x</a></td>
+                </tr>
+                <?php }
+
+                foreach ($otherIncidents as $incident) { ?>
+                <tr>
+                    <td class="down">Résolu</td>
+                    <td><?php echo $incident->getTitre() ?></td>
+                    <td><?php echo $incident->getTypeIncident()->getLibelle() ?></td>
+                    <td><?php echo $incident->getRef() ?></td>
+                    <td><?php if (showStatut($incident->getId()) == 'open'): ?>
+                        <a class="close-link"
+                            href="index.php?page=client&action=close&id=<?= $incident->getId() ?>">x</a>
+                        <?php else: ?>
+                        -
+                        <?php endif; ?>
+                    </td>
+                </tr>
+                <?php }
+            ?>
+            </tbody>
+        </table>
+
+
+
+        <div class="incident_client">
+
+            <div class="plus" onclick="showForm()">+</div>
+            <div class="form-container" id="form-container">
+                <form action="#" method="post">
+                    <label for="title">Titre de l'incident :</label>
+                    <input type="text" id="title" name="chTitre" required />
+                    <label for="style">Style de l'incident :</label>
+                    <select id="style" name="cbType" required>
+                        <?php
+                foreach ($lesIncidents as $incident){
+                    if ($incident->getId() == $unIncident->getTypeIncident()->getId()){
+                        print('<option value="'.$incident->getId().'">'.$incident->getLibelle().'</option>');
+                    }else{
+                        print('<option value="'.$incident->getId().'">'.$incident->getLibelle().'</option>');
+                    }
+                }
+            ?>
+                    </select>
+                    <label for="description">Description de l'incident :</label>
+                    <textarea id="description" name="chCommentaire" required></textarea>
+                    <input type="submit" value="Valider" />
+                </form>
+            </div>
+        </div>
+
+        <script src="public/scripts/showform.js"></script>

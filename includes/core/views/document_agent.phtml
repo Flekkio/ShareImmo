@@ -1,0 +1,67 @@
+<?php
+    ini_set('display_errors', 'on');
+    require_once "includes/core/globals.php";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <?php require "includes/partials/page_head.phtml"; ?>
+</head>
+
+<body>
+    <div class="layout">
+        <?php require_once "includes/partials/navbar.phtml"; ?>
+
+        <section class="content">
+            <?php require_once "includes/partials/header.phtml"; ?>
+
+            <div class="container--large">
+                <table class="large">
+                    <thead>
+                        <tr>
+                            <th>Client</th>
+                            <th>Statut</th>
+                            <th>Objet</th>
+                            <th>Type</th>
+                            <th>Commentaire</th>
+                            <th>Référence</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                $openIncidents = array();
+
+                foreach ($allIncidents as $incident) {
+                    if (showStatut($incident->getId()) == 'open') {
+                        array_push($openIncidents, $incident); // On ajoute l'incident en cours au tableau $openIncidents
+                    }
+                }
+
+                foreach ($openIncidents as $incident) { ?>
+                        <tr class="open">
+                            <td><?php echo $incident->getClient()->getPrenom() . ' ' . $incident->getClient()->getNom() ?>
+                            </td>
+                            <td class="progress">En cours</td>
+                            <td><?php echo $incident->getTitre() ?></td>
+                            <td><?php echo $incident->getTypeIncident()->getLibelle() ?></td>
+                            <td><?php echo $incident->getRef() ?></td>
+                            <td><?php echo $incident->getCommentaire() ?></td>
+                            <td><a class="close-link"
+                                    href="index.php?page=agent&action=close&id=<?= $incident->getId() ?>">Clôturer</a>
+                            </td>
+                        </tr>
+                        <?php }
+            ?>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

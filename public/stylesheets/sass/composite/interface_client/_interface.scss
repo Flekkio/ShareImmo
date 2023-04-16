@@ -1,0 +1,35 @@
+.card {
+  background: #ef0505;
+  padding: 5px;
+  margin: 8px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid rgb(162, 162, 162);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  &.transparent-card {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  &.transparent {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  .card-content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: #fff;
+    .card-icon {
+      font-size: 50px;
+    }
+    .label {
+      margin-top: 10px;
+      font-size: 30px;
+    }
+  }
+}

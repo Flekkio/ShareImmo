@@ -1,0 +1,20 @@
+.file-content {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  width: 60%;
+  .label {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  .icon {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}

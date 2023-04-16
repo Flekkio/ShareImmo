@@ -1,0 +1,40 @@
+.row-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &--noflex {
+    display: block;
+    background: none;
+    box-shadow: none;
+  }
+  &_auto {
+    margin: 2rem auto;
+  }
+  .btn {
+    border: none;
+    background: #fff;
+    border-radius: 0;
+    padding: 0.875rem 0.625rem;
+    cursor: pointer;
+    &--red {
+      background: #d3210a;
+      color: #fff;
+    }
+    &__label {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .info-block {
+      flex-basis: 48%;
+    }
+  }
+}
