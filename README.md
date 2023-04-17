@@ -2,6 +2,8 @@
 
 Client management site for real estate agency
 
+/!\ Pour le jury de la 3WA qui consultera ce site sur l'IDE de l'école :
+
 Pour vous connecter en tant qu'admin, veuillez utiliser les identifiants suivants :
 
 Nom d'utilisateur : sadmin

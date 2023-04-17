@@ -1,6 +1,6 @@
 function showForm() {
-  var plus = document.querySelector(".plus");
-  var formContainer = document.querySelector("#form-container");
+  const plus = document.querySelector(".plus");
+  const formContainer = document.querySelector("#form-container");
   plus.style.display = "none";
   formContainer.classList.add("show");
 }

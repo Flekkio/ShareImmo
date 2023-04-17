@@ -1,6 +1,6 @@
 function showFileName() {
-  var fileInput = document.getElementById("file");
-  var fileName = fileInput.value.split("\\").pop();
+  const fileInput = document.getElementById("file");
+  const fileName = fileInput.value.split("\\").pop();
   document.getElementById("file-name").innerHTML = fileName;
 }
 
